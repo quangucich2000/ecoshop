@@ -1,0 +1,59 @@
+@media (min-width: 1023px) {
+    .bought {
+        right: 0;
+    }
+    .bought__cost-list {
+        height: 264px;
+        overflow: hidden;
+    }
+}
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    .cart {
+        width: 60%;
+    }
+
+    .bought {
+        width: 50%;
+    }
+    .bought__cost-list {
+        height: 264px;
+        overflow: hidden;
+    }
+}
+
+/*  Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .cart {
+        width: 50%;
+    }
+    .bought__cost-list {
+        height: 264px;
+        overflow: hidden;
+    }
+}
+
+/* Moblie */
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .cart {
+        width: 100%;
+    }
+
+    .bought {
+        width: 100%;
+    }
+    .bought__cost-list {
+        height: 264px;
+        overflow: hidden;
+    }
+}

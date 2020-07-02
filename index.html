@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLife</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.13.1-web/fontawesome-free-5.13.1-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="app__header">
+            <div class="grid wide">
+                <a href="/" class="header__logo">Plant mall</a>
+            </div class="grid">
+        </header>
+
+        <section class="app__container">
+            <div class="grid wide">
+                <div class="products">
+                    <div id="list-products" class="row sm-gutter">
+                        <!-- Product item -->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="app__cart">
+
+            <div class="cart">
+                <div class="cart__title">
+                    Cart
+                </div>
+
+                <ul id="cart__list" class="cart__list">
+
+                </ul>
+
+                <div class="cart__action">
+                    <label for="bought__input" class="cart__open">
+                        <i class="cart__open-icon fas fa-level-up-alt"></i>
+                    </label>
+                </div>
+            </div>
+
+            <input class="bought__input" type="checkbox" name="" id="bought__input">
+
+            <div class="bought">
+                <label for="bought__input" class="bought__close">
+                    <i class="fas fa-long-arrow-alt-down"></i>
+                </label>
+
+                <div class="bought__header">
+                    <p>Cart</p>
+                </div>
+
+                <div class="bought__cost">
+                    <ul id="bought__cost-list" class="bought__cost-list">
+
+                    </ul>
+                    <div class="bought__cost-ship">
+                        <li class="bought__cost-item">
+                            <div class="bought__cost-item-info">
+                                <div class="bought__cost-item-img">
+                                    <i class="fas fa-truck"></i>
+                                </div>
+
+                                <div class="bought__cost-item-name">
+                                    Delivary
+                                </div>
+                            </div>
+                            <div id="cost__delivary" class="bought__cost-item-cost">
+                                $13
+                            </div>
+                        </li>
+                    </div>
+
+                    <div class="bought__cost-node">
+                        Free Distribution for More than 50 Dollars
+                    </div>
+
+                    <div class="bought__cost-total">
+                        <div class="bought__cost-total-text">
+                            Total:
+                        </div>
+                        <div id="bought__cost-total-cost" class="bought__cost-total-cost">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bought__pay">
+                    <div class="bought__pay-title">
+                        Buy now
+                    </div>
+                    <span class="bought__pay-icon">
+                        <i class="fas fa-chevron-right"></i>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
+</html>
